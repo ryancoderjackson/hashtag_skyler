@@ -16,6 +16,8 @@ potions = {
     "Striga's Urge": ['Striga heart', 'Vitriol', 'Aether', 'Hydragenum'],
 }
 
+
+# While Loop
 # Display the list of potions
 print("Welcome to Pythondale's Magic Potion Shop!")
 print("Take a look at the potions we offer:")
@@ -50,3 +52,106 @@ while index < len(ingredients):
         break
     else:
         print("Please answer with 'yes' or 'no'.")
+
+
+# For Loop
+choose = input("Which potion would you like to buy? ")
+choice = choose
+if choice == "Bindweed" or choice == "bindweed":
+    print(f"The ingredients for Bindweed are:")
+    for bindweed in potions['Bindweed']:
+        print(bindweed)
+    print("")
+    print("Let's buy each ingredient one by one.")
+    print("")
+    for aether in potions['Bindweed']:
+        buy = input(f"Would you like to buy {aether}? (yes/no): ")
+        if buy == "yes":
+             print(f"You just bought {aether}!")
+        elif buy == "no":
+            print("You chose to stop shopping. We hope that you visit Pythondale's Magic Potion Shop again.")
+            break
+        else:
+             print("I'm sorry. Please choose yes or no.")
+        print("")
+        if buy == "yes":
+            print("You bought all the ingredients to Bindweed!")
+elif choice == "Kiss" or choice == "kiss":
+    print(f"The ingredients for Kiss are:")
+    for kiss in potions['Kiss']:
+        print(kiss)
+        print("")
+    print("Let's buy each ingredient one by one.")
+    print("")
+    for vermillion in potions["Kiss"]:
+        buy = input(f"Would you like to buy {vermillion}? (yes/no): ")
+        if buy == "yes":
+            print(f"You just bought {vermillion}!")
+        elif buy == "no":
+            print("You chose to stop shopping. We hope that you visit Pythondale's Magic Potion Shop again.")
+            break
+        else:
+            print("I'm sorry. Please choose yes or no.")
+        print("")
+        if buy == "yes":
+            print("You bought all the ingredients to Kiss!")
+elif choice == "Thunderbolt" or choice == "thunderbolt":
+    print(f"The ingredients for Thunderbolt are:")
+    for thunderbolt in potions['Thunderbolt']:
+        print(thunderbolt)
+    print("")
+    print("Let's buy each ingredient one by one.")
+    print("")
+    for vitriol in potions['Thunderbolt']:
+        buy = input(f"Would you like to buy {vitriol}? (yes/no): ")
+        if buy == "yes":
+            print(f"You just bought {vitriol}!")
+        elif buy == "no":
+            print("You chose to stop shopping. We hope that you visit Pythondale's Magic Potion Shop again.")
+            break
+        else:
+            print("I'm sorry. Please choose yes or no.")
+        print("")
+        if buy == "yes":
+            print("You bought all the ingredients to Thunderbolt!")
+elif choice == "Wolf" or choice == "wolf":
+    print(f"The ingredients for Wolf are:")
+    for wolf in potions['Wolf']:
+        print(wolf)
+    print("")
+    print("Let's buy each ingredient one by one.")
+    print("")
+    for hydragenum in potions['Wolf']:
+        buy = input(f"Would you like to buy {hydragenum}? (yes/no): ")
+        if buy == "yes":
+            print(f"You just bought {hydragenum}!")
+        elif buy == "no":
+            print("You chose to stop shopping. We hope that you visit Pythondale's Magic Potion Shop again.")
+            break
+        else:
+            print("I'm sorry. Please choose yes or no.")
+        print("")
+        if buy == "yes":
+            print("You bought all the ingredients to Wolf!")
+elif choice == "Striga's Urge" or choice == "striga's urge":
+    print(f"The ingredients for Striga's Urge are:")
+    for striga in potions["Striga's Urge"]:
+        print(striga)
+    print("")
+    print("Let's buy each ingredient one by one.")
+    print("")
+    for urge in potions["Striga's Urge"]:
+        buy = input(f"Would you like to buy {urge}? (yes/no): ")
+        if buy == "yes":
+             print(f"You just bought {urge}!")
+        elif buy == "no":
+            print("You chose to stop shopping. We hope that you visit Pythondale's Magic Potion Shop again.")
+            break
+        else:
+            print("I'm sorry. Please choose yes or no.")
+        print("")
+        if buy == "yes":
+            print("You bought all the ingredients to Striga's Urge!")
+else:
+    print("I'm sorry we don't carry that potion here at Pythondale's Magic Potion Shop.")
+print("Thank you for shopping at Pythondale's Magic Potion Shop. Have a great day!")
